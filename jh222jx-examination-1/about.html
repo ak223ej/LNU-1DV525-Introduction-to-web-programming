@@ -1,0 +1,53 @@
+---
+layout: default
+title: About
+header_text: About
+images:
+  - image_path: images/me.jpg
+    title: Picture of me
+
+videos:
+  - video_path: https://www.youtube.com/embed/GhbhD1HR5vk
+    title: Funfunfunction
+---
+
+
+<article>
+  <!-- Ordered list-->
+  <h3>Favorite bands:</h3>
+  <ol>
+    <li>Uncle Acid and the Dead Beats</li>
+    <li>Tom Waits</li>
+    <li>Vidunder</li>
+    <li>Truls Morck</li>    
+  </ol>    
+</article>
+
+
+<article>
+  <!-- Unordered list-->
+  <h3>Languages i wanna learn:</h3>
+  <ul>
+    <li>Python</li>
+    <li>C/C++</li>
+    <li>Clojure</li>
+    <li>JavaScript</li>    
+  </ul>    
+</article>
+
+<article class="aboutarticle">
+  <!-- Images -->
+  {% for image in page.images %}
+    <h3>{{ image.title }}</h3>
+    <img src="{{ site.baseurl }}/{{ image.image_path }}" alt="{{ image.title }}" />
+  {% endfor %}
+</article>
+
+
+<article class="aboutarticle">
+  <!-- Images -->
+  {% for video in page.videos %}
+    <h3>{{ video.title }}</h3>
+    <iframe width="640" height="360" src="{{ video.video_path }}" frameborder="0" allowfullscreen></iframe>
+  {% endfor %}
+</article>

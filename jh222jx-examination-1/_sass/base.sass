@@ -1,0 +1,50 @@
+$navbar_color: #669999
+$navbar_button_font: "Times New Roman", Times, serif
+$header_color: #c2d6d6
+$a_hover_color: #c2d6d6
+
+
+hmtl,
+body
+  background-color: $header_color
+  margin-top: 0em
+  margin-left: 7em
+  margin-right: 7em
+
+nav
+  margin: auto
+  text-align: center
+  background: $navbar_color
+  
+  ul
+    list-style-type: none
+    display: inline-block     
+
+    li
+
+      float: left
+      margin-left: 20px
+      background-color: $navbar_color
+      
+      a
+        color: black
+        text-decoration: none
+        font-family: $navbar_button_font
+        &:hover
+          color: $a_hover_color
+
+header
+  height: 10em
+  position: relative
+  background-image: url(http://freedesignfile.com/upload/2014/07/Ornate-paisley-pattern-seamless-vector-material-05.jpg)
+  background-color: $header_color
+
+  h2
+    font-size: 8em
+    font-family: $navbar_button_font
+    margin: 0
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)

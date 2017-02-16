@@ -1,0 +1,63 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='utf-8')
+    title Desktop Application
+    link(rel='stylesheet', href='stylesheet/style.css')
+    
+  body
+    main
+      section#topbar
+      section#desktop
+      
+      section#headerbar(align='center')
+        button#btnabout About
+        button#btnchat Chat
+        button#btnmem Memory
+        button#btnquestion Question
+        button#btnsettings Settings
+
+    template#acceptcookietemplate
+      section(align='center')#acceptcookie(style='height: 100%')
+        div(style='height: 100%')
+          p
+            | This site needs to use cookies to work.
+            | By clicking "Accept" you accept that this application
+            | stores data in your browser.
+            | More info about the law can be
+            | found here:
+          p
+            a(href="https://polisen.se/Om-webbplatsen/Information-om-cookies/") About cookies (swe)
+          button#acceptcookiesbtn(type='submit') Accept
+
+    template#gametemplate
+      section(align='center')
+        h3#timer Timeleft: 20
+      section#formplace
+      article#answerbtnsection(align='center')
+        button#btn Answer
+        
+    template#starttemplate
+      form(align='center')
+        text#username Username
+        input(type='search')
+        button#initbtn(type='submit') Start Game
+
+    template#end
+    
+    template#inputform
+      form(align='center')
+        text#questionText Something
+        input(type='search')
+        
+    template#selectform
+      form(align='center')
+        text#questionText Something
+        select#alternatives(name='alternatives')
+        
+    template#highscoretemplate
+      section(align='center')#highscore
+        h2 Highscore:    
+        
+    script(src='javascript/app.js')

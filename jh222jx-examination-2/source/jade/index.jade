@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+  
+    meta(charset='utf-8')
+    title Quiz
+    link(rel='stylesheet', href='stylesheet/style.css')
+    
+  body
+    main
+      article
+        h2#headertext(align='center') Welcome
+        
+    template#gametemplate
+      section(align='center')
+        h3#timer Timeleft: 20
+      section#formplace
+      article#answerbtnsection(align='center')
+        button#btn Answer
+        
+    template#starttemplate
+      form(align='center')
+        text#username Username
+        input(type='search')
+        button#initbtn(type='submit') Start Game
+
+    template#acceptcookietemplate
+      section(align='center')
+        p
+          | This site needs to use cookies to work.
+          | By clicking "Accept" you accept that this application
+          | stores data in your browser.
+          | More info about the law can be
+          | found here:
+        p
+          a(href="https://polisen.se/Om-webbplatsen/Information-om-cookies/") About cookies (swe)
+        button#acceptcookiesbtn(type='submit') Accept
+        
+    template#end
+    
+    template#inputform
+      form(align='center')
+        text#questionText Something
+        input(type='search')
+        
+    template#selectform
+      form(align='center')
+        text#questionText Something
+        select#alternatives(name='alternatives')
+        
+    template#highscoretemplate
+      section(align='center')
+        h2 Highscore:
+        
+    script(src='javascript/app.js')

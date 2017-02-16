@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="➜ Welcome to my page!" />
+    <meta property="og:type" content="blog" />
+    <meta property="og:url" content="https://1dv525.github.io/jh222jx-examination-1/index.html" />
+    <meta property="og:image" content="https://1dv525.github.io/jh222jx-examination-1/images/me.jpg" />
+
+    <link rel="author" href="humans.txt" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+  </head>
+
+  <body>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <header>
+      <h2>{{ page.header_text }}<h2>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+  </body>
+</html>

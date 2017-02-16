@@ -1,0 +1,35 @@
+---
+layout: default
+title: Contact
+header_text: Contact
+---
+
+<section>
+  <p>If you need help with support or have questions. Use the form bellow.</p>
+    
+  <form action="http://jherrlin.se/api/contact/" method="POST">
+    
+    <fieldset>
+      <legend>Ask your question</legend>
+      <select name="type">
+        <option value="question">Question</option>
+        <option value="support">Support</option>    
+      </select>
+      <br>
+      Name: <input type="text">
+      <br>
+      Question: <textarea name="question"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>How should I contact you?</legend>
+      Telephone: <input type="checkbox" name="telephone">
+      <br>
+      E-mail: <input type="checkbox" name="email">    
+
+    </fieldset>
+
+    <input type="submit" value="Send">
+
+  </form>
+</section>
